@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mark Calculator</h1>
+        <form id="markForm">
+            <h2>Enter Details for Modules (Modules 1-4 Required, 5-6 Optional)</h2>
+            <div id="modulesContainer">
+                <!-- Module inputs will be dynamically generated or statically added -->
+                <div class="module-section">
+                    <h3>Module 1</h3>
+                    <div class="input-group">
+                        <label for="module1">Module Name:</label>
+                        <input type="text" id="module1" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="caMark1">CA Test Mark (out of 100):</label>
+                        <input type="number" id="caMark1" min="0" max="100" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="assignmentMark1">Assignment Mark (out of 100):</label>
+                        <input type="number" id="assignmentMark1" min="0" max="100" required>
+                    </div>
+                </div>
+                <div class="module-section">
+                    <h3>Module 2</h3>
+                    <div class="input-group">
+                        <label for="module2">Module Name:</label>
+                        <input type="text" id="module2" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="caMark2">CA Test Mark (out of 100):</label>
+                        <input type="number" id="caMark2" min="0" max="100" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="assignmentMark2">Assignment Mark (out of 100):</label>
+                        <input type="number" id="assignmentMark2" min="0" max="100" required>
+                    </div>
+                </div>
+                <div class="module-section">
+                    <h3>Module 3</h3>
+                    <div class="input-group">
+                        <label for="module3">Module Name:</label>
+                        <input type="text" id="module3" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="caMark3">CA Test Mark (out of 100):</label>
+                        <input type="number" id="caMark3" min="0" max="100" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="assignmentMark3">Assignment Mark (out of 100):</label>
+                        <input type="number" id="assignmentMark3" min="0" max="100" required>
+                    </div>
+                </div>
+                <div class="module-section">
+                    <h3>Module 4</h3>
+                    <div class="input-group">
+                        <label for="module4">Module Name:</label>
+                        <input type="text" id="module4" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="caMark4">CA Test Mark (out of 100):</label>
+                        <input type="number" id="caMark4" min="0" max="100" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="assignmentMark4">Assignment Mark (out of 100):</label>
+                        <input type="number" id="assignmentMark4" min="0" max="100" required>
+                    </div>
+                </div>
+                <div class="module-section">
+                    <h3>Module 5 (Optional)</h3>
+                    <div class="input-group">
+                        <label for="module5">Module Name:</label>
+                        <input type="text" id="module5">
+                    </div>
+                    <div class="input-group">
+                        <label for="caMark5">CA Test Mark (out of 100):</label>
+                        <input type="number" id="caMark5" min="0" max="100">
+                    </div>
+                    <div class="input-group">
+                        <label for="assignmentMark5">Assignment Mark (out of 100):</label>
+                        <input type="number" id="assignmentMark5" min="0" max="100">
+                    </div>
+                </div>
+                <div class="module-section">
+                    <h3>Module 6 (Optional)</h3>
+                    <div class="input-group">
+                        <label for="module6">Module Name:</label>
+                        <input type="text" id="module6">
+                    </div>
+                    <div class="input-group">
+                        <label for="caMark6">CA Test Mark (out of 100):</label>
+                        <input type="number" id="caMark6" min="0" max="100">
+                    </div>
+                    <div class="input-group">
+                        <label for="assignmentMark6">Assignment Mark (out of 100):</label>
+                        <input type="number" id="assignmentMark6" min="0" max="100">
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="calculateHalf">Calculate All Modules</button>
+        </form>
+        <div id="resultsContainer" class="hidden">
+            <h2>Results for All Modules</h2>
+            <div id="modulesResults"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
