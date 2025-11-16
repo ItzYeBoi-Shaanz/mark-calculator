@@ -10,6 +10,10 @@
     <div class="container">
         <h1>Mark Calculator</h1>
         <form id="markForm">
+            <div class="input-group">
+                <label for="userName">Your Name:</label>
+                <input type="text" id="userName" required pattern="[A-Za-z\s]+" title="Only alphabets and spaces are allowed">
+            </div>
             <h2>Enter Details for Modules (Modules 1-4 Required, 5-6 Optional)</h2>
             <div id="modulesContainer">
                 <!-- Module inputs will be dynamically generated or statically added -->

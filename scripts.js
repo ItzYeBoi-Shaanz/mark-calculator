@@ -1,4 +1,10 @@
 document.getElementById('calculateHalf').addEventListener('click', function() {
+    const userName = document.getElementById('userName').value.trim();
+    if (!userName || !/^[A-Za-z\s]+$/.test(userName)) {
+        alert('Please enter a valid name containing only alphabets and spaces.');
+        return;
+    }
+
     const modules = [];
     let requiredValid = true;
 
@@ -59,6 +65,7 @@ document.getElementById('calculateHalf').addEventListener('click', function() {
     });
 
     // Display results
+    document.querySelector('#resultsContainer h2').textContent = `${userName}, Here are the Results for All of Your Modules:`;
     const resultsContainer = document.getElementById('modulesResults');
     resultsContainer.innerHTML = '';
 
